@@ -1,0 +1,133 @@
+:root {
+  --dark-green: #1A4D2E;
+  --mid-green: #2D6A4F;
+  --light-bg: #F7F9F7;
+  --text-dark: #1B1B1B;
+  --text-muted: #5A5A5A;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: var(--light-bg);
+  color: var(--text-dark);
+  line-height: 1.6;
+}
+
+.intro {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 60px 24px 40px;
+  text-align: center;
+}
+
+.intro h1 {
+  font-size: 2rem;
+  color: var(--dark-green);
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-weight: 600;
+  color: var(--mid-green);
+  margin-bottom: 16px;
+}
+
+.summary {
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.links a {
+  color: var(--mid-green);
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: 600;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+.timeline {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px 24px 80px;
+  border-left: 2px solid var(--mid-green);
+}
+
+.project {
+  position: relative;
+  padding: 0 0 40px 24px;
+}
+
+.project::before {
+  content: '';
+  position: absolute;
+  left: -7px;
+  top: 6px;
+  width: 12px;
+  height: 12px;
+  background: var(--dark-green);
+  border-radius: 50%;
+}
+
+.date {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--mid-green);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+
+.project h2 {
+  font-size: 1.2rem;
+  color: var(--text-dark);
+  margin-bottom: 8px;
+}
+
+.project p {
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 10px;
+}
+
+.tags span {
+  background: #E4EFE8;
+  color: var(--dark-green);
+  font-size: 0.75rem;
+  padding: 3px 10px;
+  border-radius: 12px;
+}
+
+.link {
+  display: inline-block;
+  color: var(--mid-green);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-right: 12px;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 24px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
